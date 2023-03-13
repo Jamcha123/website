@@ -1,6 +1,6 @@
 {
     "hosting": {
-        "public": "something",
+        "public": "new website",
         "ignore": [
             "node_modules",
             "**/*",

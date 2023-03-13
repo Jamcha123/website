@@ -5,31 +5,56 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
-    <script type="module" src="./fire.js"></script>
-    <script defer src="./animation.js"></script>
-    <script defer type="module" src="./index.js"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet"> 
+    <script type="module" src="./fire.js"></script>
+    <script defer type="module" src="./animation.js"></script>
+    <script defer type="module" src="./index.js"></script>
+    <script defer type="module" src="./item.js"></script>
   </head>
   <body>
-    <div class="back">
+    <div class="container">
       <nav class="navbar">
-        <ul class="extra">
-          <li id="enter" onclick="press(+1)"><span class="material-symbols-outlined">menu</span></li>
+        <ul class="bar">
+          <li id="enter"><span id="down" class="material-symbols-outlined">menu</span></li>
         </ul>
-        <nav class="open">
-          <li id="exit" onclick="press(-1)"><span class="material-symbols-outlined">close</span></li>
-          <ul class="text">
-            <li class="push"><a href="#shit">things</a></li>
-            <li class="push"><a href="#shit">things</a></li>
-            <li class="push"><a href="#shit">things</a></li>
-          </ul>
-        </nav>
+        <ul class="text">
+          <li id="exit"><span id="down" class="material-symbols-outlined">close</span></li>
+          <li id="space"><a href="#om">Om mig</a></li>
+          <li id="space"><a href="#huvuddel">Huvuddelen</a></li>
+          <li id="space"><a href="#sista">Contakt info</a></li>
+          <h2>Pro tip, hover over the text</h2>
+        </ul>
       </nav>
       <section class="hidden">
-        <div class="container">
+        <div class="box" id="om">
+          <h1>Om mig</h1>
+          <div class="extra">
+            <p>
+              heklcfknekcn
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="hidden">
+        <div class="box" id="huvuddel">
+          <h1>Huvuddelen</h1>
+          <div class="extra">
+            <p>
 
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="hidden">
+        <div class="box" id="sista">
+          <h1>Contakt info</h1>
+          <div class="extra">
+            <p>
+              
+            </p>
+          </div>
         </div>
       </section>
     </div>
